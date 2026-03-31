@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>III Encuentro Lockton - SST bajo la lupa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc;
+        }
+
+        .lockton-navy { background-color: #002855; }
+        .lockton-cyan { background-color: #00A9E0; }
+        .text-lockton-cyan { color: #00A9E0; }
+        .text-lockton-navy { color: #002855; }
+        .border-lockton-cyan { border-color: #00A9E0; }
+
+        .hero-section {
+            background-color: #002855;
+            background-image: linear-gradient(135deg, #002855 0%, #001a38 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Sutil patrón de fondo corporativo */
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(#00A9E0 0.5px, transparent 0.5px);
+            background-size: 30px 30px;
+            opacity: 0.1;
+        }
+
+        .speaker-card {
+            border-top: 4px solid #00A9E0;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Navegación -->
+    <nav class="bg-white py-5 shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 grid grid-cols-3 items-center">
+        
+        <div class="flex justify-start">
+            <span class="text-xs font-bold uppercase tracking-widest text-slate-500">
+                People Solutions
+            </span>
+        </div>
+
+        <div class="flex justify-center">
+            <img src="lockton.png" alt="Logo LOCKTON" class="h-16 w-auto object-contain">
+        </div>
+
+        <div class="flex justify-end">
+            <a href="https://forms.office.com/r/sB8utSYvjN" target="_blank" class="lockton-cyan text-white px-7 py-2.5 rounded-full font-bold hover:bg-[#0092c2] transition-all shadow-md text-sm uppercase tracking-wide">
+                Inscribirse ahora
+            </a>
+        </div>
+
+    </div>
+    </nav>
+
+    <!-- Hero Section Corporativo -->
+    <header class="hero-section text-white py-24 px-6">
+        <div class="container mx-auto max-w-5xl relative z-10 text-center md:text-left">
+            <div class="inline-block bg-[#00A9E0] text-white text-[10px] font-black uppercase tracking-[0.2em] px-3 py-1 mb-6 rounded">
+                III Encuentro Lockton
+            </div>
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight tracking-tight">
+                SST bajo la lupa: <br>
+                <span class="text-lockton-cyan">claves de gestión frente a SUNAFIL, accidentes y nuevos riesgos laborales</span>
+            </h1>
+            <p class="text-lg md:text-xl font-light text-slate-300 mb-10 max-w-3xl leading-relaxed">
+                Una conversación estratégica liderada por Jorge Toyama para anticipar los desafíos de este 2026.
+            </p>
+            
+            <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                <a href="https://forms.office.com/r/sB8utSYvjN" target="_blank" class="bg-white text-lockton-navy px-10 py-4 rounded-lg font-extrabold text-lg hover:bg-slate-100 transition-all shadow-xl">
+                    Registrar mi asistencia
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tarjetas de Información -->
+    <section class="container mx-auto px-6 -mt-10 relative z-20">
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-7 rounded-lg shadow-xl flex items-center space-x-5 border border-slate-100">
+                <div class="text-lockton-cyan">
+                    <i data-lucide="calendar" class="w-8 h-8"></i>
+                </div>
+                <div>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Fecha del evento</p>
+                    <p class="text-lg font-bold text-lockton-navy">Miércoles 22 de abril</p>
+                </div>
+            </div>
+            <div class="bg-white p-7 rounded-lg shadow-xl flex items-center space-x-5 border border-slate-100">
+                <div class="text-lockton-cyan">
+                    <i data-lucide="clock" class="w-8 h-8"></i>
+                </div>
+                <div>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Horario</p>
+                    <p class="text-lg font-bold text-lockton-navy">8:30 a.m. a 10:00 a.m.</p>
+                </div>
+            </div>
+            <div class="bg-white p-7 rounded-lg shadow-xl flex items-center space-x-5 border border-slate-100">
+                <div class="text-lockton-cyan">
+                    <i data-lucide="map-pin" class="w-8 h-8"></i>
+                </div>
+                <div>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Ubicación</p>
+                        <a href="https://maps.app.goo.gl/mu3W4gABMEYbno1x5" target="_blank" class="text-lg font-bold text-lockton-navy hover:text-lockton-cyan transition-colors">
+                        Hotel Intercontinental, Miraflores
+                        </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido del Conversatorio -->
+    <section class="container mx-auto px-6 py-20 max-w-6xl">
+    <div class="grid md:grid-cols-2 gap-16 items-start">
+        
+        <div class="flex flex-col">
+            <h2 class="text-3xl font-extrabold mb-8 text-lockton-navy tracking-tight">Acerca del Conversatorio</h2>
+            <div class="space-y-6 text-lg text-slate-600 leading-relaxed font-light text-justify">
+                <p>
+                    En un entorno regulatorio cada vez más exigente, la gestión de la <strong>Seguridad y Salud en el Trabajo (SST)</strong> se ha convertido en una pieza crítica para la continuidad y reputación de las organizaciones.
+                </p>
+                <p>
+                    Este encuentro exclusivo para clientes de <span class="text-lockton-navy font-bold">Lockton</span> está diseñado para dotar a los líderes de Gestión Humana de herramientas prácticas para gestionar los riesgos emergentes, afrontar satisfactoriamente inspecciones de <span class="text-lockton-cyan font-semibold">SUNAFIL</span>, gestionar eficazmente accidentes y enfermedades laborales con una mirada integral en este 2026.
+                </p>
+            </div>
+            <div class="mt-12 p-8 bg-slate-50 rounded-xl border border-slate-200 shadow-sm">
+                <h3 class="font-bold mb-6 text-lockton-navy flex items-center uppercase tracking-wider text-sm">
+                    <span class="w-2 h-6 lockton-cyan mr-3"></span>
+                    Ejes del Programa
+                </h3>
+                <ul class="space-y-5">
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="text-lockton-cyan w-5 h-5 mr-3 mt-1 flex-shrink-0"></i>
+                        <span class="text-slate-700">Protocolos ante inspecciones de SUNAFIL: Prevención y respuesta inmediata.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="text-lockton-cyan w-5 h-5 mr-3 mt-1 flex-shrink-0"></i>
+                        <span class="text-slate-700">Responsabilidad legal frente a accidentes de trabajo.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="text-lockton-cyan w-5 h-5 mr-3 mt-1 flex-shrink-0"></i>
+                        <span class="text-slate-700">Salud mental y riesgos ergonómicos: El futuro de la protección laboral.</span>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        <div class="bg-white p-8 md:p-12 rounded-lg shadow-2xl speaker-card">
+            <div class="text-center">
+                <div class="w-52 h-52 mx-auto mb-8 rounded-full overflow-hidden border-4 border-slate-50 shadow-lg">
+                    <img src="jorge-toyama.jpg.jpg" alt="Jorge Toyama" class="w-full h-full object-cover">
+                </div>
+                <p class="text-[10px] font-black uppercase tracking-[0.2em] text-lockton-cyan mb-2">Sesión a cargo de</p>
+                <h3 class="text-3xl font-extrabold text-lockton-navy mb-1">Jorge Toyama</h3>
+                <p class="text-slate-400 font-medium mb-8">Socio Principal en Vinatea & Toyama</p>
+                <div class="h-[1px] bg-slate-100 w-full mb-8"></div>
+                <p class="text-slate-700 text-base leading-relaxed text-left mb-8 font-light text-justify">
+                    Referente indiscutible en derecho laboral en el país. Con una visión estratégica única, ha asesorado a las principales corporaciones nacionales y extranjeras en gestión de cumplimiento y prevención de riesgos laborales.
+                </p>
+                <a href="https://www.linkedin.com/in/jorge-toyama/" target="_blank" class="flex items-center justify-center space-x-3 w-full py-4 lockton-cyan border-lockton-cyan rounded text-white hover:bg-[#0092c2] transition-all text-sm font-bold shadow-md">
+                    <i data-lucide="linkedin" class="w-4 h-4 text-white"></i>
+                    <span>Conectar en LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </div> 
+    </section>
+
+    <!-- Sección Final (Sin botón redundante) -->
+    <section class="bg-[#f4f7f9] py-24 px-6 border-t border-slate-100">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-extrabold mb-6 text-lockton-navy">Asegure su participación hoy mismo</h2>
+            <p class="text-slate-500 text-lg mb-12 max-w-2xl mx-auto font-light">
+                Este es un espacio de alto nivel diseñado para líderes de Gestión Humana con el respaldo y la experiencia de Lockton.
+            </p>
+            
+            <div class="inline-flex flex-col md:flex-row items-center bg-white p-8 rounded-lg shadow-sm border border-slate-200 space-y-6 md:space-y-0 md:space-x-10">
+                <div class="flex items-center space-x-4">
+                    <div class="p-3 bg-slate-50 rounded">
+                        <i data-lucide="info" class="text-lockton-cyan w-6 h-6"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-lockton-navy font-bold text-lg">Cupos Limitados</p>
+                        <p class="text-slate-400 text-sm">Registro exclusivo para invitados</p>
+                    </div>
+                </div>
+                <div class="h-10 w-[1px] bg-slate-200 hidden md:block"></div>
+                <div class="flex items-center space-x-4">
+                    <div class="p-3 bg-slate-50 rounded">
+                        <i data-lucide="users" class="text-lockton-cyan w-6 h-6"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-lockton-navy font-bold text-lg">Aforo Controlado</p>
+                        <p class="text-slate-400 text-sm">Garantizamos un entorno seguro y profesional</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-slate-100">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-baseline justify-center mb-8">
+                <span class="text-2xl font-black tracking-tighter text-[#002855]">LOCKTON</span>
+                <div class="h-4 w-[1px] bg-slate-300 mx-4"></div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">People Solutions</span>
+            </div>
+            <p class="text-slate-400 text-xs font-medium">
+                &copy; 2026 Lockton Perú. <br> Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializar iconos
+        lucide.createIcons();
+    </script>
+</body>
+</html>
